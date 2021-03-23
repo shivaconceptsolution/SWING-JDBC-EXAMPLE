@@ -1,0 +1,70 @@
+JDBC?
+
+JDBC means Java database connectivity, it will work as a bridge between appliation and database.
+
+It use predefie driver to manage conection from application to multiple database server such as MYSQL, Oracle, MS-SQL, etc.
+
+
+JDBC uses four different type of driver to establish connectio.
+
+Type1:-   JDBC- ODBC
+
+
+Type2:-    JDBC Vendor Specific
+
+
+Type 3:-    JDBC Network Specific
+
+
+Type 4:-     JDBC Client Server or Java thin Driver.
+
+
+Type 4 is the most updated driver that is used to manage database connection from any database server to all platform.
+
+
+
+How to work with JDBC?
+
+
+STEP1st:-
+
+Prepare BackEnd or Database
+
+1)  Install MYSQL Server using MYSQL Yog or XAMPP .
+
+XAMPP is easy to manage it provide PHPMYADMIN IDE TOOLS to work with MYSQL Database.
+
+2)  Start MYSQL using XAMPP or MYSQL YOG and Create Database and Tables.
+
+   Start XAMPP Control Panel  Start APACHE, START MYSQL
+
+   localhost/phpmyadmin
+
+3) Create form using SWING APPLICATION according to database tables.
+
+
+4)  ADD MYSQL Connector using Right click on libraries on netbeans folder 
+
+
+5)  Write Database Connectivity Code under button click
+
+
+   5.1)  import jdbc package for database operation
+
+         import java.sql.*;
+
+   5.2)  Register Driver under application
+  
+   5.3)  Manage connection String
+          	
+  5.4 )  Write SQL query using Statement reference with executeUpdate()
+
+         Query for data insertion
+
+         insert into tablename(columnname,...) values('colvalue',.....)
+
+         "insert into student(rno,sname,branch,fees) values('" +  1001 " ','"+  xyz + "','cs','45000');
+
+
+
+
